@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --blue: #007bff;
+  --cyan: #17a2b8;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: seashell;
+}
+html::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 5rem;
+}
+
+.background-color {
+  width: 100%;
+  height: 116vh;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: linear-gradient(
+    264.75deg,
+    #261d71fa 13.33%,
+    rgba(95, 46, 112, 0.990622) 46.34%,
+    #8d265c 88.13%,
+    rgba(49, 42, 114, 0.623931) 115.27%,
+    rgba(177, 108, 150, 0.41) 115.29%
+  );
+}
+
+.big-box {
+  width: 90%;
+  height: 110vh;
+  position: absolute;
+  top: 3%;
+  left: 5%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.left {
+  float: left;
+  width: 43%;
+  height: 103vh;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+}
+
+.right {
+  z-index: 1000;
+  float: right;
+  width: 57%;
+  height: 103vh;
+  background-color: #fff;
+}
+
+.bottom {
+  width: 100%;
+  height: 3.2rem;
+  position: absolute;
+  bottom: 0%;
+  background-image: linear-gradient(to right, #2c1bbefa, #cb247a);
+  font-size: 2rem;
+  padding-top: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.head-text {
+  text-align: center;
+  align-items: center;
+  margin-top: -4.5rem;
+}
+.head-text h1 {
+  font-size: 6.5rem;
+  color: rgba(13, 68, 207, 0.624);
+}
+.head-text h1 small {
+  color: rgb(96, 77, 241);
+  font-size: 3.5rem;
+}
+.head-text h2 {
+  color: var(--cyan);
+  font-size: 2rem;
+  margin-top: -6.5rem;
+  margin-bottom: 1rem;
+}
+.head-text p {
+  color: #181c20;
+  font-size: 1.6rem;
+  padding: 0 10%;
+}
+.head-text p span {
+  color: #582471;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+/* --------------- */
+.whole-form {
+  margin-top: -3rem;
+}
+.input-group label {
+  position: absolute;
+  top: 9px;
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 100;
+  color: #000000a8;
+  padding: 2px 0;
+  z-index: 5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.input-group input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  z-index: 3;
+  border: 1px solid #707476;
+  padding: 10px 0;
+  background: #ffffff;
+  box-sizing: border-box;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  outline: none;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  font-size: 2rem;
+}
+.input-group .lighting {
+  background: var(--blue);
+  width: 0;
+  height: 2px;
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.input-group.focused .lighting {
+  width: 100%;
+}
+
+.input-group.focused label {
+  background: #fff;
+  font-size: 2rem;
+  top: -18px;
+  color: #101110;
+}
+
+.input-group span.validate-tooltip {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+/* ---this is for lable gap */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.input-group span {
+  color: red;
+}
+.capcha i {
+  font-size: 3rem;
+  color: blue;
+  margin-left: 3rem;
+  /* font-weight: 300; */
+}
+
+/* suuperters ----- remeber me------ */
+.wrapper .supporter {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #8e8e8e;
+
+  cursor: pointer;
+}
+.forgot {
+  color: #0095da;
+}
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.wrapper .remember-me {
+  cursor: pointer;
+}
+.wrapper input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+/* button------------- */
+#login {
+  font-size: 2rem;
+  width: 20%;
+  cursor: pointer;
+  color: #007bff;
+  background-color: #e5f6fd;
+  border: 1px solid #31a9e1;
+  margin-top: 1rem;
+  margin-left: 35%;
+  font-weight: 200;
+  padding: 5px 5px;
+}
+#login:hover {
+  background-color: #0095da;
+  color: #ffff;
+}
+.capcha input {
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.8rem;
+  padding: 5px 10px;
+  outline: none;
+}
+button {
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #fff;
+
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+/* not underr---------- */
+.wrapper .inner-warpper {
+  padding: 50px 30px 60px;
+  box-shadow: 1px 1.732px 10px 0px rgba(0, 0, 0, 0.063);
+}
+.wrapper .signup-wrapper a {
+  text-decoration: none;
+  color: #7f7f7f;
+}
+.securety {
+  text-align: center;
+  margin-top: 3rem;
+}
+.securety span {
+  font-size: 3rem;
+  color: red;
+  padding: 5px;
+  /* margin-top: -5rem; */
+  /* border: 2px solid green; */
+}
